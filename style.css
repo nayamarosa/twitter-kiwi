@@ -1,0 +1,18 @@
+body{
+    background-color: #b5d4f3;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    resize: none;
+    overflow: hidden;
+}
+
+.counter-send{
+    display: flex;
+    justify-content: center;
+}
