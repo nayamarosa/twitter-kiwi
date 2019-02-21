@@ -2,8 +2,6 @@ let post = document.getElementById("post");
 let postList = document.getElementById("post-list");
 let btn = document.getElementById("btn");
 
-// document.getElementById("post").addEventListener('keydown', textareaResize)
-
 function btnEnable(btn){
     btn.disabled = false;
 }
@@ -14,18 +12,23 @@ function btnDesable(btn){
 }
 
 function kiwiPost(post, postList, btn){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(event){
+        event.preventDefault();
+
         let postSpace = document.createElement('section');
-        postList.appendChild(postSpace);
+        postList.insertBefore(postSpace, postList.firstChild);
+
         let postItem = document.createElement('article');
         postItem.innerHTML = post.value;
         postSpace.appendChild(postItem);
+        
         let timeElement = document.createElement('p');
         let postTime = moment().format('llll');
         timeElement.innerHTML = postTime;
         postSpace.appendChild(timeElement);
 
         post.value = '';
+        post.focus();
         btnDesable(btn);
     });
 }
@@ -45,7 +48,7 @@ function typing(post){
         } else if ((postValue.length > 120) && (postValue.length < 130)){
             charCounter.style.color = 'rgb(190, 174, 26)';
         } else if (postValue.length < 120){
-            charCounter.style.color = 'rgb(100, 100, 100)';
+            charCounter.style.color = 'rgb(60, 61, 61)';
         }
     });
 }
