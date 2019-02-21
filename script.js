@@ -6,7 +6,6 @@ function btnEnable(btn){
     btn.disabled = false;
 }
 
-
 function btnDesable(btn){
     btn.disabled = true;
 }
@@ -30,17 +29,25 @@ function kiwiPost(post, postList, btn){
         post.value = '';
         post.focus();
         btnDesable(btn);
+        changeTitle();
     });
+}
+
+function changeTitle(){
+    let title = document.getElementById('title');
+    title.innerHTML = 'POSTS RECENTES :)'
 }
 
 function typing(post){
     let charMax = 140;
     let charCounter = document.getElementById("char-counter");
+
     post.addEventListener('keyup', function(){
         let postValue = post.value;
         let charReduce = charMax - postValue.length;
-        btnEnable(btn);
         charCounter.innerHTML = charReduce;
+        btnEnable(btn);
+
         if((postValue.length > 140) || (postValue.length === 0)){
             btnDesable(btn);
         } else if(postValue.length > 130){
@@ -50,6 +57,7 @@ function typing(post){
         } else if (postValue.length < 120){
             charCounter.style.color = 'rgb(60, 61, 61)';
         }
+
     });
 }
 

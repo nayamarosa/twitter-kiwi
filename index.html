@@ -6,17 +6,30 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="container">
+    <nav>
+        <figure class="logo">
+            <img src="images/logo.png" alt="logo">
+        </figure>
+    </nav>
+    <header>
+        <aside>
+                <figure class="user">
+                    <img src="images/user-img.png" alt="user">
+                </figure>
+                <p>kiwi USER</p>
+        </aside>
         <form>
             <label for="post">
-                <textarea id="post" name="post" rows="1"></textarea>
+                <textarea id="post" name="post" placeholder="Piaí?" rows="1"></textarea>
             </label>
             <div class="counter-send">
                 <p id="char-counter">140</p>
                 <button id="btn" class="btn" disabled>POSTAR</button>
             </div>
         </form>
-    <h1>POSTS RECENTES</h1>
+    </header>
+    <h1 id="title">NENHUM POST :(</h1>
     <main id="post-list"></main>
     
     <script src="moment.js"></script>
