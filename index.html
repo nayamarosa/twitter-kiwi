@@ -3,21 +3,31 @@
 <head>
     <meta charset="utf-8" lang="pt-br">
     <title>kiwi</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
-<body class="container">
+<body >
     <nav>
         <figure class="logo">
             <img src="images/logo.png" alt="logo">
         </figure>
+        <ul class="menu">
+            <li>PÁGINA INICIAL</li>
+            <li>TOP POSTS</li>
+            <li>NOTIFICAÇÕES</li>
+            <li>MENSAGENS</li>
+        </ul>
     </nav>
-    <header>
+    <header class="container">
         <aside>
+            <h2>SEU PERFIL</h2>
+            <section class="user-name-img">
                 <figure class="user">
                     <img src="images/user-img.png" alt="user">
                 </figure>
-                <p>kiwi USER</p>
+                <p>@kiwiUSER</p>
+            </section>
+            
         </aside>
         <form>
             <label for="post">
@@ -30,7 +40,7 @@
         </form>
     </header>
     <h1 id="title">NENHUM POST :(</h1>
-    <main id="post-list"></main>
+    <main id="post-list" class="container"></main>
     
     <script src="moment.js"></script>
     <script src="script.js"></script>
