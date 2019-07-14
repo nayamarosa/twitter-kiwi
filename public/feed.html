@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/feed.css">
+
+    <title>kiwi</title>
+</head>
+<body>
+    <nav>
+        <figure class="logo">
+            <img src="images/logo.png" alt="logo">
+        </figure>
+        <section class="collapse">
+            <input type="checkbox" name="menu" id="menu">
+            <label for="menu">MENU</label>
+            <div class="menu-content">
+                <ul class="menu">
+                    <li>PÁGINA INICIAL</li>
+                    <li>TOP POSTS</li>
+                    <li>NOTIFICAÇÕES</li>
+                    <li>MENSAGENS</li>
+                    <li>SAIR</li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+    <header class="container">
+        <aside>
+            <h2>SEU PERFIL</h2>
+            <section class="user-name-img">
+                <figure class="user">
+                    <img src="images/user-img.png" alt="user">
+                </figure>
+                <p>@kiwiUSER</p>
+            </section>
+            
+        </aside>
+        <form class="form-post">
+            <section class="align-add-post">
+                <textarea class="textarea" id="post" name="post" placeholder="Piaí?" rows="1"></textarea>
+                <div class="counter-send">
+                    <p id="char-counter">140</p>
+                    <button id="btn" class="btn" disabled>POSTAR</button>
+                </div>
+            </section>
+        </form>
+    </header>
+    <h1 id="title">NENHUM POST :(</h1>
+    <main id="post-list" class="container"></main>
+    
+    <script src="js/moment.js"></script>
+    <script src="js/feed.js"></script>
+</body>
+</html>
