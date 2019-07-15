@@ -1,38 +1,36 @@
-# kiwi
+# Kiwi
 
->Projeto baseado no Twitter
+## Rede social para mini posts.
+  
+### Índice
 
-----
-## versão 0.0.1
+1. O Projeto
 
-> Formulário com entrada de texto, botão postar e retorno do texto no HTML.
+2. Objetivo
 
-----
-## versão 0.0.2
+3. Implementação
 
-> Desativar botão se o texto está vazio e fazer contagem de caracteres regressiva.
+### 1. O Projeto
 
-----
-## versão 0.0.2
+Projeto desenvolvido para o bootcamp da Laboratória SP. Consiste em desenvolver uma rede social de mini posts(Twitter), com quantidade máxima de caracteres
+  
+### 2. Objetivos de aprendizagem
 
-> Desativar botão se o texto está vazio e fazer contagem de caracteres regressiva.
+- Criar elementos novos(posts), colocar máximo de caracteres que podem ser utilizados e aplicar data e hora em cada postagem.
 
-----
-## versão 0.0.3
+#### Considerações
 
-> Desativar botão se o texto ultrapassar 140 caracteres, mudar de cor quando inserir 120 caracteres, mudar de cor novamente ao inserir 130 caracteres e mostrar números negativos ao passar os 140 caracteres.
+- A lógica do projeto foi implementada em Javascript, HTML5 e CSS3.
 
-----
-## versão 0.0.4
+#### Requisitos
 
-> Aumentar a textarea com tecla 'ENTER'.
+- Uso de Javascript;
+- Poder postar algo com no máximo 140 caracteres.
 
-----
-## versão 0.0.5
+### 3. Implementação
 
-> Aumentar a textarea se os caracteres ultrapassarem o tamanho da textarea.
+Versão 0.0.1 - Entrada de texto com retorno na tela, desativação do botão caso não haja entrada ou o número de caracteres ultrapasse o permitido, mostrar data e hora no post.
 
-----
-## versão 0.0.6
+Versão 0.0.2 - Login e cadastro com Firebase.
 
-> Adicionar horário ao post.
+Versão 0.0.3 - Salvar posts no Firebase, editar e excluir posts.
