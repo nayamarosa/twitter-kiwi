@@ -5,6 +5,8 @@ body{
     color: #3c3d3d;
 }
 
+
+
 .container{
     margin: 0 auto;
     width: 90%;
@@ -124,7 +126,6 @@ aside{
     border: 1px solid #6e7f91;
     border-radius: 15px;
     outline: none;
-    font-family: 'Raleway', sans-serif;
 }
 
 .textarea:focus{
@@ -144,8 +145,7 @@ aside{
 
 .btn{
     margin-left: 20px;
-    padding: 10px 20px;
-    font-family: 'Raleway', sans-serif;
+    padding: 10px 20px
     background-color: transparent;
     border: 1px solid #6e7f91;
     border-radius: 15px;
@@ -320,7 +320,6 @@ aside{
         border: 1px solid #6e7f91;
         border-radius: 15px;
         outline: none;
-        font-family: 'Raleway', sans-serif;
     }
     
     textarea:focus{
@@ -341,7 +340,6 @@ aside{
     .btn{
         margin-left: 20px;
         padding: 10px 20px;
-        font-family: 'Raleway', sans-serif;
         background-color: transparent;
         border: 1px solid #6e7f91;
         border-radius: 15px;
