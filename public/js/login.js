@@ -4,8 +4,6 @@ const login = (event) => {
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#password").value;
     loginUserWithFirebase(email, password);
-    
-    // window.location = "../feed.html?id=" + userId;
 }
 
 document.querySelector("#login").addEventListener("click", login);

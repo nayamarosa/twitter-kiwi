@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/feed.css">
 
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+    <script src="js/firebaseconfig.js"></script>
+
     <title>kiwi</title>
 </head>
 <body>
@@ -17,14 +22,14 @@
         </figure>
         <section class="collapse">
             <input type="checkbox" name="menu" id="menu">
-            <label for="menu">MENU</label>
+            <label for="menu"></label>
             <div class="menu-content">
                 <ul class="menu">
                     <li>PÁGINA INICIAL</li>
                     <li>TOP POSTS</li>
                     <li>NOTIFICAÇÕES</li>
                     <li>MENSAGENS</li>
-                    <li>SAIR</li>
+                    <li id="logout">SAIR</li>
                 </ul>
             </div>
         </section>
@@ -56,5 +61,6 @@
     
     <script src="js/moment.js"></script>
     <script src="js/feed.js"></script>
+    <script src="js/logout.js"></script>
 </body>
 </html>

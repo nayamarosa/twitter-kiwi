@@ -5,10 +5,6 @@ body{
     color: #3c3d3d;
 }
 
-.hidden{
-    display: none;
-}
-
 .header{
     background-color: #6e7f91;
     display: flex;
@@ -73,4 +69,95 @@ body{
 
 .hidden{
     display: none;
+}
+
+@media screen and (min-width: 760px){
+    html{
+        height: 100%;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    .align-desktop{
+        display: flex;
+        height: 100%;
+    }
+
+    .header{
+        background-color: #6e7f91;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .align{
+        margin: 0 auto;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .align p{
+        font-size: 12px;
+        margin: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .align p strong{
+        cursor: pointer;
+    }
+    
+    .logo{
+        margin: 0;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img{
+        padding: 10px 0;
+        width: 100%;
+    }
+    
+    .input{
+        width: 100%;
+        padding: 10px 15px;
+        margin: 10px 0 10px;
+        box-sizing: border-box;
+        border: 1px solid #6e7f91;
+        border-radius: 15px;
+        outline: none;
+    }
+    
+    .textarea:focus{
+        border: 1px solid #b6d2f0;
+    }
+    
+    .btn{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 1px solid #6e7f91;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .btn:hover:enabled{
+        background-color: #6e7f91;
+        color: white;
+    }
+
+    .hidden{
+        display: none;
+    }
 }

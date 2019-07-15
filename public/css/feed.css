@@ -5,8 +5,6 @@ body{
     color: #3c3d3d;
 }
 
-
-
 .container{
     margin: 0 auto;
     width: 90%;
@@ -34,16 +32,19 @@ nav{
 }
 
 .collapse{
-    width: 20%;
+    width: 20px;
     display: flex;
     justify-content: center;
 }
 
 .collapse label{
+    height: 20px;
+    width: 20px;
     font-size: 16px;
     font-weight: 700;
     color: #d1d7dd;
-    background: url(menu.png);
+    background: url(../images/menu.png);
+    background-size: cover;
     cursor: pointer;
 }
 
@@ -53,7 +54,9 @@ input#menu {
 
 input:checked + label {
     display: block;
-    background-image: url(close.png);
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/close.png)
 }
 
 .menu-content {
@@ -145,7 +148,7 @@ aside{
 
 .btn{
     margin-left: 20px;
-    padding: 10px 20px
+    padding: 10px 20px;
     background-color: transparent;
     border: 1px solid #6e7f91;
     border-radius: 15px;
@@ -211,6 +214,7 @@ aside{
     
     nav{
         margin: 0 0 40px;
+        padding: 0;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -229,7 +233,7 @@ aside{
     }
     
     .collapse{
-        width: 40%;
+        width: 42%;
     }
     
     .collapse label{
